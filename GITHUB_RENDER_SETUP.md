@@ -1,66 +1,62 @@
-# EM4 render pipeline — one-time GitHub setup
+# EM4 render pipeline — status
 
-I can't create repos or push code from here (no `gh`, no git auth in this
-session). Five steps, ~10 minutes, then EM4a → EM4b runs itself forever.
+Repo: https://github.com/Freedomwelathlab/fwl-remotion-render (public)
 
-## 1. Create the repo
-
-Public, so Actions minutes are free and unlimited, and the rendered MP4s get
-plain public download URLs PostPulse/YouTube can fetch with no auth.
+## Wiring (done — verified end to end 2026-07-30)
 
 ```
-https://github.com/new
-```
-Name it anything (e.g. `fwl-remotion-render`). **Public.** Don't initialize
-with a README (we're pushing an existing project).
-
-## 2. Push this project
-
-From this folder:
-
-```bash
-git init
-git add .
-git commit -m "Remotion render pipeline for EM4"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git push -u origin main
+EM4a (Make)  --repository_dispatch-->  GitHub Actions "Render Video"
+                                              |
+                                       renders with Remotion
+                                              |
+                                       uploads MP4 as a Release asset
+                                              |
+EM4b (Make)  <--POST callbackUrl---------------
 ```
 
-## 3. Point EM4a at your repo
+EM4a module 21 (`Create JSON`) builds the dispatch payload against the
+`EM4 Render Dispatch Payload` data structure, and module 19 (GitHub
+"Make an API Call") POSTs it:
 
-In Make.com, open scenario **EM4a Mkt_TikTok Video Engine (Remotion, $0)**,
-find the "Make an API Call" (GitHub) module, and replace the URL field:
+- URL: `/repos/Freedomwelathlab/fwl-remotion-render/dispatches`
+  (relative — the GitHub app prepends `https://api.github.com`)
+- Headers: `Accept: application/vnd.github+json`, `Content-Type: application/json`
+- Body: `{{21.json}}`
 
+The payload's `callbackUrl` is EM4b's webhook, so the render result travels
+with each request instead of living in a secret. No repo secrets are needed —
+the workflow uses GitHub's automatic `GITHUB_TOKEN`.
+
+Payload shape consumed by `scripts/write-request.js`:
+
+```json
+{
+  "event_type": "render-video",
+  "client_payload": {
+    "requestId": "em4-<productId>-<epoch>",
+    "composition": "ProductVideo",
+    "callbackUrl": "https://hook.eu1.make.com/...",
+    "outputName": "em4-...",
+    "props": { "productTitle": "", "hook": "", "caption": "",
+               "images": [], "accent": "mint", "secondsPerImage": 3 }
+  }
+}
 ```
-/repos/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_REPO_NAME/dispatches
-```
 
-with your real `<username>/<repo-name>`.
+`composition` must be one of `HookOverlay`, `ShortVideo`, `ProductVideo`.
 
-## 4. Reconnect PostPulse
+## Still outstanding
 
-Your PostPulse connection (used by EM4b for TikTok posting) expired
-2026-07-29. Reconnect it in Make.com — I can't do OAuth for you.
+1. **EM4b is inactive.** Callbacks queue on its webhook instead of posting.
+   Activate it once PostPulse is reconnected.
+2. **PostPulse connection expired 2026-07-29.** Reconnect in Make — OAuth
+   can't be done from here.
+3. **Check the store domain in EM4a module 10.** `ProductLink` is built as
+   `https://fwlonline.myshopify.com/products/<handle>`, but the Shopify
+   connection is `1dis4u-xn.myshopify.com`. If `fwlonline` isn't a live
+   custom domain, every posted link 404s.
 
-## 5. Test end to end
-
-1. In Make, run **EM4a** once manually (or `scenarios_run`).
-2. Check the Actions tab on your new repo — a "Render Video" run should
-   start within a few seconds.
-3. When it finishes (a couple minutes), it POSTs to EM4b's webhook
-   automatically. Check EM4b's execution history for a successful run,
-   and check the repo's Releases tab for the uploaded MP4.
-4. If the GitHub Action fails, its logs will show exactly where — most
-   likely cause on a first run is a missing dependency lockfile mismatch,
-   fixable by re-running `npm ci` locally to confirm `package-lock.json`
-   is current before pushing.
-
-No secrets to configure — the workflow uses GitHub's own automatic
-`GITHUB_TOKEN`, and the callback URL travels with each dispatch payload
-rather than living in a secret.
-
-## What's now free that used to cost credits
+## What's free that used to cost credits
 
 | Step | Before | Now |
 |---|---|---|
