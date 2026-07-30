@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/6177731/6177731-hd_720_1280_24fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/6177732/6177732-hd_720_1280_24fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/8970797/8970797-hd_720_1280_30fps.mp4", "durationInSeconds": 11.1 }
+  ],
+  "hookText": "The Passive Income Idea\nNobody's Talking About",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Everyone's selling courses about passive income", "startSeconds": 4, "durationSeconds": 4.7 },
+    { "text": "The real idea? License something you already made", "startSeconds": 8.7, "durationSeconds": 4.7 },
+    { "text": "A photo. A template. A spreadsheet you built for you", "startSeconds": 13.4, "durationSeconds": 4.7 },
+    { "text": "List it once on one marketplace. Stop touching it.", "startSeconds": 18.1, "durationSeconds": 4.7 },
+    { "text": "It's not sexy. It's just quiet income.", "startSeconds": 22.8, "durationSeconds": 4.7 }
+  ],
+  "disclaimerStartSeconds": 27.5,
+  "disclaimerDurationSeconds": 4.6,
+  "accent": "mint"
+}

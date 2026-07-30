@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/5197673/5197673-hd_720_1280_25fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/27155332/12086318_360_640_24fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7191511/7191511-hd_1080_1920_25fps.mp4", "durationInSeconds": 7.2 }
+  ],
+  "voiceoverFile": "day17.mp3",
+  "hookText": "Nobody Tells You This\nAbout Getting a Raise",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Your take-home grows less than you think", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 22,
+  "disclaimerDurationSeconds": 4.1,
+  "accent": "mint"
+}

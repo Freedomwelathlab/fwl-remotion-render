@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/34829282/14764437_360_640_25fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/38455042/16330357_360_640_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/8926984/8926984-hd_720_1280_30fps.mp4", "durationInSeconds": 8.6 }
+  ],
+  "voiceoverFile": "day07.mp3",
+  "hookText": "Your Emergency Fund Might Be\nCosting You Money",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "(inflation is shrinking it every month)", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 23.4,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

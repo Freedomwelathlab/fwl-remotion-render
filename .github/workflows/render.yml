@@ -1,0 +1,47 @@
+name: Render Video
+
+on:
+  repository_dispatch:
+    types: [render-video]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install edge-tts (optional voiceover)
+        run: pip install --quiet edge-tts
+
+      - name: Write request payload
+        env:
+          RENDER_REQUEST: ${{ toJson(github.event.client_payload) }}
+        run: node scripts/write-request.js
+
+      - name: Generate voiceover (if requested)
+        run: node scripts/generate-voiceover.js
+
+      - name: Render composition
+        run: node scripts/render.js
+
+      - name: Publish MP4 as a release asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/publish-release.js
+
+      - name: Notify Make.com webhook
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/notify-callback.js

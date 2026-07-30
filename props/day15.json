@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/5740702/5740702-hd_720_1280_24fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/3831872/3831872-hd_720_1366_50fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/6700958/6700958-hd_1080_1920_30fps.mp4", "durationInSeconds": 5.1 }
+  ],
+  "voiceoverFile": "day15.mp3",
+  "hookText": "Why Most People Never Escape\nPaycheck-to-Paycheck",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "It's rarely about income", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 20,
+  "disclaimerDurationSeconds": 4.1,
+  "accent": "mint"
+}

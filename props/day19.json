@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/13441334/13441334-hd_720_1280_24fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/13441336/13441336-hd_720_1280_24fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/10374888/10374888-hd_720_1280_24fps.mp4", "durationInSeconds": 9.9 }
+  ],
+  "voiceoverFile": "day19.mp3",
+  "hookText": "How Beginners Are Using AI\nTo Make Their First $100",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "It's rarely a big launch", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 24.7,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

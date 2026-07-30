@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/7191512/7191512-hd_720_1280_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/8937982/8937982-hd_720_1280_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/13441359/13441359-hd_720_1280_24fps.mp4", "durationInSeconds": 7.4 }
+  ],
+  "voiceoverFile": "day21.mp3",
+  "hookText": "Why 'Passive' Income Isn't\nActually Passive",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "(and what actually is)", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 21.2,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

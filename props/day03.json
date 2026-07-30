@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/7817075/7817075-hd_720_1280_60fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/7255747/7255747-hd_1080_1920_25fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/9049301/9049301-hd_720_1280_24fps.mp4", "durationInSeconds": 10.1 }
+  ],
+  "hookText": "Signs You're Quietly Winning\nWith Money",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "You check your balance without dread", "startSeconds": 4, "durationSeconds": 4.7 },
+    { "text": "Your subscriptions are ones you actually use", "startSeconds": 8.7, "durationSeconds": 4.7 },
+    { "text": "You have a number for \"emergency,\" not just a feeling", "startSeconds": 13.4, "durationSeconds": 4.7 },
+    { "text": "You buy quality once, not cheap three times", "startSeconds": 18.1, "durationSeconds": 4.7 },
+    { "text": "Nobody has to know. That's the point.", "startSeconds": 22.8, "durationSeconds": 4.7 }
+  ],
+  "disclaimerStartSeconds": 27.5,
+  "disclaimerDurationSeconds": 4.6,
+  "accent": "mint"
+}

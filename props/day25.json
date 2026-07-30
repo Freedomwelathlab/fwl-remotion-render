@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/7224886/7224886-hd_720_1280_25fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/8439961/8439961-hd_720_1280_50fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/6535341/6535341-hd_720_1366_25fps.mp4", "durationInSeconds": 8 }
+  ],
+  "hookText": "How Ordinary People Quietly\nBuild Wealth in Their 30s",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "They don't have a special job", "startSeconds": 4, "durationSeconds": 4.25 },
+    { "text": "They just started 10 years before everyone else", "startSeconds": 8.25, "durationSeconds": 4.25 },
+    { "text": "They kept the same car 2 years longer than they wanted to", "startSeconds": 12.5, "durationSeconds": 4.25 },
+    { "text": "They never checked what their friends were earning", "startSeconds": 16.75, "durationSeconds": 4.25 },
+    { "text": "Boring, consistent, and it compounds", "startSeconds": 21, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 25,
+  "disclaimerDurationSeconds": 4,
+  "accent": "mint"
+}

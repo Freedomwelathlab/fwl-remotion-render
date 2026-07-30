@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/6898096/6898096-hd_720_1280_25fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/6214214/6214214-hd_720_1280_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7567650/7567650-hd_720_1280_25fps.mp4", "durationInSeconds": 9.4 }
+  ],
+  "voiceoverFile": "day23.mp3",
+  "hookText": "How I Automated My Way to\nSaving $500/Month",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Without ever thinking about it", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 26.2,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "mint"
+}

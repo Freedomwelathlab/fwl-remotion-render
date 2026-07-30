@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/6391733/6391733-hd_720_1280_24fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/6963412/6963412-hd_720_1280_30fps.mp4", "durationInSeconds": 8 },
+    { "src": "https://videos.pexels.com/video-files/17683439/17683439-hd_720_1280_60fps.mp4", "durationInSeconds": 5.1 }
+  ],
+  "voiceoverFile": "day14.mp3",
+  "hookText": "This Free AI Tool Writes\nand Sells Your First Product",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "You just have to hit go", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 17.9,
+  "disclaimerDurationSeconds": 4.1,
+  "accent": "gold"
+}

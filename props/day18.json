@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/12908964/12908964-hd_720_1280_24fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/8731293/8731293-hd_1080_1920_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7924459/7924459-hd_1080_1920_24fps.mp4", "durationInSeconds": 11.1 }
+  ],
+  "hookText": "The Silent Money Leak\nCosting You $200/Month",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Subscriptions you forgot you had", "startSeconds": 4, "durationSeconds": 4.7 },
+    { "text": "Bank fees you could avoid with one email", "startSeconds": 8.7, "durationSeconds": 4.7 },
+    { "text": "The \"convenience\" delivery fee, every single time", "startSeconds": 13.4, "durationSeconds": 4.7 },
+    { "text": "Interest on a balance you could pay off today", "startSeconds": 18.1, "durationSeconds": 4.7 },
+    { "text": "Check one thing this week. Just one.", "startSeconds": 22.8, "durationSeconds": 4.7 }
+  ],
+  "disclaimerStartSeconds": 27.5,
+  "disclaimerDurationSeconds": 4.6,
+  "accent": "mint"
+}

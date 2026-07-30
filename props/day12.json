@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/7247826/7247826-hd_720_1280_30fps.mp4", "durationInSeconds": 7 },
+    { "src": "https://videos.pexels.com/video-files/8926978/8926978-hd_1080_1920_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7247861/7247861-hd_1080_1920_30fps.mp4", "durationInSeconds": 10.5 }
+  ],
+  "voiceoverFile": "day12.mp3",
+  "hookText": "The 50/30/20 Budget Is Broken\nHere's What Replaces It",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Pay yourself first — 20% before anything else", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 22.3,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

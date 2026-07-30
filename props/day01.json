@@ -1,0 +1,17 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/8472307/8472307-hd_720_1280_50fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/12894347/12894347-hd_720_1280_24fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/9464310/9464310-hd_1080_2048_30fps.mp4", "durationInSeconds": 10.1 }
+  ],
+  "voiceoverFile": "day01.mp3",
+  "hookText": "This AI tool made me\n$340 last month",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "...and I never showed my face once", "startSeconds": 4, "durationSeconds": 4 },
+    { "text": "No camera. No editing skills. One afternoon of setup.", "startSeconds": 16, "durationSeconds": 5 }
+  ],
+  "disclaimerStartSeconds": 27,
+  "disclaimerDurationSeconds": 4.1,
+  "accent": "gold"
+}

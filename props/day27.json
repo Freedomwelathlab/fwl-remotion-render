@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/6799748/6799748-hd_720_1280_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7247828/7247828-hd_720_1280_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/7691593/7691593-hd_720_1280_25fps.mp4", "durationInSeconds": 6.6 }
+  ],
+  "voiceoverFile": "day27.mp3",
+  "hookText": "Rich People Don't Save Money\nThey Do This Instead",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Saving protects. Investing moves you forward.", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 20.4,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "mint"
+}

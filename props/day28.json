@@ -1,0 +1,20 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/6213998/6213998-hd_720_1280_30fps.mp4", "durationInSeconds": 11 },
+    { "src": "https://videos.pexels.com/video-files/6214218/6214218-hd_720_1280_30fps.mp4", "durationInSeconds": 8 },
+    { "src": "https://videos.pexels.com/video-files/7191512/7191512-hd_720_1280_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/8937982/8937982-hd_720_1280_30fps.mp4", "durationInSeconds": 3 }
+  ],
+  "hookText": "The 24-Hour Rule\nThat Saved Me Thousands",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Any purchase over $100 waits 24 hours", "startSeconds": 4, "durationSeconds": 4.7 },
+    { "text": "No exceptions. No \"but it's on sale.\"", "startSeconds": 8.7, "durationSeconds": 4.7 },
+    { "text": "Half the time, I forget about it completely", "startSeconds": 13.4, "durationSeconds": 4.7 },
+    { "text": "The other half, I buy it — guilt-free", "startSeconds": 18.1, "durationSeconds": 4.7 },
+    { "text": "One rule. Thousands saved. Zero deprivation.", "startSeconds": 22.8, "durationSeconds": 4.5 }
+  ],
+  "disclaimerStartSeconds": 27.3,
+  "disclaimerDurationSeconds": 3.7,
+  "accent": "gold"
+}

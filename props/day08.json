@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/10374885/10374885-hd_720_1280_24fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/6898096/6898096-hd_1080_1920_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/6278956/6278956-hd_720_1280_30fps.mp4", "durationInSeconds": 8.7 }
+  ],
+  "voiceoverFile": "day08.mp3",
+  "hookText": "The 3-Account System\nThat Fixed My Spending",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Bills · Spending · Savings", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 23.5,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "mint"
+}

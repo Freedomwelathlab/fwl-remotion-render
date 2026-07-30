@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/5886790/5886790-hd_1080_1920_24fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/6565715/6565715-hd_720_1280_24fps.mp4", "durationInSeconds": 8 },
+    { "src": "https://videos.pexels.com/video-files/6633351/6633351-hd_1080_1920_25fps.mp4", "durationInSeconds": 6.8 }
+  ],
+  "voiceoverFile": "day13.mp3",
+  "hookText": "What My Bank Account Looks Like\nAfter 1 Year of This Habit",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "10% moves out, automatically, every payday", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 20.6,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

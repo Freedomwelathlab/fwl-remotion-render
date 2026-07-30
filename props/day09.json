@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/8706294/8706294-hd_1080_1920_30fps.mp4", "durationInSeconds": 10 },
+    { "src": "https://videos.pexels.com/video-files/8706293/8706293-hd_1080_1920_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/8706325/8706325-hd_720_1280_60fps.mp4", "durationInSeconds": 8.5 }
+  ],
+  "voiceoverFile": "day09.mp3",
+  "hookText": "I Built a Digital Product\nWith Free AI Tools",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "One afternoon. Zero budget.", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 23.3,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "gold"
+}

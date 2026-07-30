@@ -1,0 +1,19 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/7316976/7316976-hd_720_1280_50fps.mp4", "durationInSeconds": 12 },
+    { "src": "https://videos.pexels.com/video-files/5925304/5925304-hd_720_1280_30fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/5924993/5924993-hd_720_1280_24fps.mp4", "durationInSeconds": 11.1 }
+  ],
+  "hookText": "The Real Reason You're Still\nLiving Paycheck to Paycheck",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "It's not your salary", "startSeconds": 4, "durationSeconds": 4.7 },
+    { "text": "It's that expenses expand to meet it", "startSeconds": 8.7, "durationSeconds": 4.7 },
+    { "text": "New car, bigger apartment, more subscriptions", "startSeconds": 13.4, "durationSeconds": 4.7 },
+    { "text": "Every raise gets absorbed within a month", "startSeconds": 18.1, "durationSeconds": 4.7 },
+    { "text": "Fix the ratio, not the income", "startSeconds": 22.8, "durationSeconds": 4.7 }
+  ],
+  "disclaimerStartSeconds": 27.5,
+  "disclaimerDurationSeconds": 4.6,
+  "accent": "gold"
+}

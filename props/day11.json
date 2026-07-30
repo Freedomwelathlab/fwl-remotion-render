@@ -1,0 +1,16 @@
+{
+  "scenes": [
+    { "src": "https://videos.pexels.com/video-files/19225485/19225485-hd_1080_1920_30fps.mp4", "durationInSeconds": 8 },
+    { "src": "https://videos.pexels.com/video-files/7656536/7656536-hd_1080_1920_25fps.mp4", "durationInSeconds": 9 },
+    { "src": "https://videos.pexels.com/video-files/6342236/6342236-hd_1080_1920_24fps.mp4", "durationInSeconds": 11.2 }
+  ],
+  "voiceoverFile": "day11.mp3",
+  "hookText": "I Tried Print-On-Demand\nFor 30 Days",
+  "hookDurationSeconds": 4,
+  "captions": [
+    { "text": "Here's what actually happened", "startSeconds": 4, "durationSeconds": 4 }
+  ],
+  "disclaimerStartSeconds": 24,
+  "disclaimerDurationSeconds": 4.2,
+  "accent": "mint"
+}
