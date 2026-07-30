@@ -20,6 +20,7 @@ const body = {
     process.env.GITHUB_SERVER_URL && process.env.GITHUB_REPOSITORY
       ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`
       : null,
+  ...(request.socialCopy || {}),
 };
 
 (async () => {

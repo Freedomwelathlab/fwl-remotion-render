@@ -21,7 +21,7 @@ try {
   fail(`RENDER_REQUEST is not valid JSON: ${e.message}`);
 }
 
-const { requestId, composition, props, callbackUrl, outputName } = payload;
+const { requestId, composition, props, callbackUrl, outputName, socialCopy } = payload;
 
 if (!requestId || typeof requestId !== "string") {
   fail("payload.requestId is required (string)");
@@ -49,6 +49,7 @@ fs.writeFileSync(
       props,
       callbackUrl,
       outputName: outputName || `${composition}-${requestId}`,
+      socialCopy: socialCopy || {},
     },
     null,
     2,
