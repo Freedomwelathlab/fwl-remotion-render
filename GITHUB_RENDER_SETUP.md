@@ -45,6 +45,33 @@ Payload shape consumed by `scripts/write-request.js`:
 
 `composition` must be one of `HookOverlay`, `ShortVideo`, `ProductVideo`.
 
+## Voiceover + captions (added 2026-07-31)
+
+`ProductVideo` now accepts `voiceoverFile` and plays it as the video's audio
+track (baked into the MP4 at render time — no separate audio asset to
+distribute). EM4a's GPT step now also returns a `script` field (15-25s of
+spoken narration) which module 21 maps to `props.voiceoverText`, with
+`props.voiceoverVoice` hardcoded to `en-US-AriaNeural` (US female). The
+on-screen `caption` field still renders as the caption bar — that's the
+"captions" layer; there's no word-by-word burned-in transcript, the caption
+bar text is the source of truth for both what's read aloud and what's shown.
+
+Download links are logged to Google Sheet `EM4_Video_Render_Log`
+(`1vBqvFHFNpcBWSrrXzEOSmyvl0Xv59XtA7YdR1xLdf2Y`) by EM4b immediately after
+each webhook callback, columns: Date | RequestId | ProductTitle |
+DownloadUrl | Status | TikTokTitle. Sheet has no header row yet — add one
+manually before the first real run if you want it.
+
+## Live test run — 2026-07-31
+
+Full pipeline verified live: EM4a dispatch -> GitHub render (with AriaNeural
+voiceover baked into the MP4) -> EM4b callback -> logged to
+`EM4_Video_Render_Log` -> **posted live to TikTok** via PostPulse. YouTube
+upload branch also ran (large data transfer matched the video size).
+Only the Facebook Page scheduled-post module failed: it was sending
+`youtubePublishAt` as an ISO8601 string but Facebook's `CreatePost` expects
+a Unix timestamp for `date` — fixed by wrapping in `formatDate(...; "X")`.
+
 ## Still outstanding
 
 1. **EM4b is inactive.** Callbacks queue on its webhook instead of posting.
