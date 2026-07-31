@@ -1,10 +1,12 @@
 import React from "react";
 import {
   AbsoluteFill,
+  Audio,
   Img,
   interpolate,
   Sequence,
   spring,
+  staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
@@ -17,6 +19,7 @@ export const productVideoSchema = z.object({
   images: z.array(z.string()).min(1),
   accent: z.enum(["mint", "gold"]),
   secondsPerImage: z.number().min(1).max(10),
+  voiceoverFile: z.string().optional(),
 });
 
 type Props = z.infer<typeof productVideoSchema>;
@@ -171,6 +174,7 @@ export const ProductVideo: React.FC<Props> = ({
   images,
   accent,
   secondsPerImage,
+  voiceoverFile,
 }) => {
   const { durationInFrames } = useVideoConfig();
   const accentColor = accent === "gold" ? COLORS.gold : COLORS.mint;
@@ -185,6 +189,7 @@ export const ProductVideo: React.FC<Props> = ({
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bg }}>
+      {voiceoverFile ? <Audio src={staticFile(`audio/${voiceoverFile}`)} /> : null}
       {images.map((src, i) => (
         <Sequence key={i} from={i * slideFrames} durationInFrames={slideFrames}>
           <Slide

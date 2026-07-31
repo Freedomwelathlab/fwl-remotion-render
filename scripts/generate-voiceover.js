@@ -15,7 +15,7 @@ if (!props.voiceoverText) {
   process.exit(0);
 }
 
-const voice = props.voiceoverVoice || "en-US-AndrewNeural";
+const voice = props.voiceoverVoice || "en-US-AriaNeural";
 const audioDir = path.join(__dirname, "..", "public", "audio");
 fs.mkdirSync(audioDir, { recursive: true });
 
